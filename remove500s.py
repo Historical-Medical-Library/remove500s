@@ -78,6 +78,6 @@ for file in os.listdir('C:/path/to/MARCXML'):
         soup.find('datafield', tag='563').decompose()
     if soup.find('datafield', tag='581') is not None:
         soup.find('datafield', tag='581').decompose()
-    xmlTemp = open('H:/Library/ArchivesSpace/cpparchives.org_MARCXML_soup/' + file, 'w', encoding='utf8')
+    xmlTemp = open('C:/path/to/MARCXML' + file, 'w', encoding='utf8')
     xmlTemp.write(str(soup))
     xmlTemp.close()
